@@ -1,6 +1,6 @@
-# Test Go code on Kubernetes
+# Execute Go code on Kubernetes
 
-Boilerplate code for testing Golang code on Kubernetes cluster.
+Boilerplate code for executing Golang code on Kubernetes cluster.
 
 ```console
 $ make push # push code on docker hub
