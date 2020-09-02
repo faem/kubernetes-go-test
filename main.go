@@ -2,21 +2,16 @@ package main
 
 import (
 	"fmt"
-	"net"
+	"kmodules.xyz/client-go/meta"
 )
 
 func main() {
 	/*
-		Code that is needed to be tested on kubernetes goes here.
+		Code that is needed to be executed on kubernetes cluster goes here.
 	*/
 
 	// Example:
-	// This code will find the CNAME of `kubernetes.default` service
+	// This code will find the cluster domain
 
-	addr, err := net.LookupCNAME("kubernetes.default")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	fmt.Println(addr)
+	fmt.Println(meta.ClusterDomain())
 }
